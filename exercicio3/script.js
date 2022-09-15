@@ -10,4 +10,13 @@ const produtos = [
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
+
+ const filtroLimpeza = produtos.filter((elemento) =>
+ {
+    if(elemento.categoria === "Limpeza")
+    {
+        return elemento
+    }
+ })
+ console.log(filtroLimpeza)
  
